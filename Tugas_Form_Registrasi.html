@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Form Registrasi </h1>
+        <form action="Biodata.php" method="post">
+            <fieldset>
+                <legend>Biodata</legend>
+                <table>
+                    <tr>
+                        <td>Nama :</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>NIM :</td>
+                        <td><input type="text" name="nim"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir :</td>
+                        <td><select name="optTanggal Lahir" id="Tanggal Lahir">
+                            <option value="01">01</option>
+                        </select>
+                        <select name="optTanggal Lahir" id="Tanggal Lahir">
+                            <option value="Januari">Januari &emsp; &emsp; &emsp; &ensp;</option>
+                        </select>
+        
+                        <select name="optTanggal Lahir" id="Tanggal Lahir">
+                            <option value="1990">1990 </option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td><textarea name="Alamat" id="" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td><input type="radio" name="rdjk" id="jk" value="L"> Laki-Laki
+                        <input type="radio" name="rdjk" id="jk" value="P"> Perempuan</td>
+                    </tr>
+            </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>User Account</legend>
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="Username"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" name="Password"></td>
+                    </tr>
+                    <tr>
+                        <td>Ulangi Password</td>
+                        <td><input type="text" name="Ulangi Password"></td>
+                    </tr>
+            </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Resolusi Tahun Ini</legend>
+                <label>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="checkbox" name="Menguasai HTML" value="Menguasai HTML"> Menguasai HTML
+                </label>
+                <br>
+                <label>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="checkbox" name="Paham CSS" value="Paham CSS"> Paham CSS
+                </label>
+                <br>
+                <label>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="checkbox" name="Mastering PHP" value="Mastering PHP"> Mastering PHP
+                </label>
+            </fieldset>
+            <br>
+            <input type="submit" name="submit" value="Kirim Data">
+        </form>
+</body>
+</html>
