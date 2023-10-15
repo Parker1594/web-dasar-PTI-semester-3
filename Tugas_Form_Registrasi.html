@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 20px;
+            color: red;
+            border: 7px solid rgb(110, 179, 247);
+            
+        }
+        legend {
+            font-size: 25px;
+            color: blueviolet;
+            font-style: italic;
+        }
+
+        .bg-biru {
+            background-color: blue;
+        }
+        .bg-merah {
+            background-color: red;
+        }
+        .bg-kuning {
+            background-color: yellow;
+        }
+        .bg-hijau {
+            background-color: green;
+        }
+        .bg-birulangit {
+            background-color: aqua;
+        }
+        .bg-pink {
+            background-color: pink;
+        }
+    </style>
+
 </head>
 <body>
     <h1> Form Registrasi </h1>
@@ -10,33 +42,45 @@
                 <legend>Biodata</legend>
                 <table>
                     <tr>
-                        <td>Nama :</td>
+                        <td class="bg-merah">Nama :</td>
                         <td><input type="text" name="name"></td>
                     </tr>
                     <tr>
-                        <td>NIM :</td>
+                        <td class="bg-kuning">NIM :</td>
                         <td><input type="text" name="nim"></td>
                     </tr>
                     <tr>
-                        <td>Tanggal Lahir :</td>
+                        <td class="bg-hijau">Tanggal Lahir :</td>
                         <td><select name="optTanggal Lahir" id="Tanggal Lahir">
                             <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
                         </select>
                         <select name="optTanggal Lahir" id="Tanggal Lahir">
                             <option value="Januari">Januari &emsp; &emsp; &emsp; &ensp;</option>
+                            <option value="Februari">Februari </option>
+                            <option value="Maret">Maret </option>
+                            <option value="April">April </option>
+                            <option value="Mei">Mei </option>
                         </select>
         
                         <select name="optTanggal Lahir" id="Tanggal Lahir">
                             <option value="1990">1990 </option>
+                            <option value="1991">1991 </option>
+                            <option value="1992">1992 </option>
+                            <option value="1993">1993 </option>
+                            <option value="1994">1994 </option>
                         </select>
                         </td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td class="bg-biru">Alamat</td>
                         <td><textarea name="Alamat" id="" cols="30" rows="5"></textarea></td>
                     </tr>
                     <tr>
-                        <td>Jenis Kelamin</td>
+                        <td class="bg-birulangit">Jenis Kelamin</td>
                         <td><input type="radio" name="rdjk" id="jk" value="L"> Laki-Laki
                         <input type="radio" name="rdjk" id="jk" value="P"> Perempuan</td>
                     </tr>
@@ -47,19 +91,19 @@
                 <legend>User Account</legend>
                 <table>
                     <tr>
-                        <td>Username</td>
+                        <td style="font-style: italic;">Username</td>
                         <td><input type="text" name="Username"></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
+                        <td style="font-family: 'Courier New', Courier, monospace;">Email</td>
                         <td><input type="text" name="Email"></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Password</td>
                         <td><input type="text" name="Password"></td>
                     </tr>
                     <tr>
-                        <td>Ulangi Password</td>
+                        <td style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Ulangi Password</td>
                         <td><input type="text" name="Ulangi Password"></td>
                     </tr>
             </table>
@@ -67,20 +111,20 @@
             <br>
             <fieldset>
                 <legend>Resolusi Tahun Ini</legend>
-                <label>
+                <label style="color: red;">
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="checkbox" name="Menguasai HTML" value="Menguasai HTML"> Menguasai HTML
                 </label>
                 <br>
-                <label>
+                <label style="color: blueviolet;">
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="checkbox" name="Paham CSS" value="Paham CSS"> Paham CSS
                 </label>
                 <br>
-                <label>
+                <label style="color: green;">
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <input type="checkbox" name="Mastering PHP" value="Mastering PHP"> Mastering PHP
                 </label>
             </fieldset>
             <br>
-            <input type="submit" name="submit" value="Kirim Data">
+            <input type="submit" name="submit" value="Kirim Data" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
         </form>
 </body>
 </html>
